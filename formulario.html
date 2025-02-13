@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style/index.css">
+    <link rel="stylesheet" href="./temporal.css">
+</head>
+
+<body
+    class="sm:bg-[linear-gradient(to_left_bottom,_#07b0f2,_#049dd8,_#038abe,_#0378a4,_#04668c)]  min-h-[100vh] flex justify-center items-center">
+    <section class="w-full max-w-[500px] h-fit py-12 bg-white rounded-[30px]">
+        <figure class="w-fit h-fit mx-auto mb-12">
+            <img class="w-[180px]" src="/assets/logo-horizontal.svg" alt="logo de data umsa">
+        </figure>
+
+        <div class="w-[250px] h-fit mx-auto">
+            <p class="font-normal text-lg font-[Roboto] text-[#999999] mb-5">Verifica que la información sea correcta:
+            </p>
+            <div class="w-full h-fit mb-5">
+                <label class="w-full h-fit flex border-2 border-[color:#999999] overflow-hidden rounded-lg" for="user">
+                    <div class="w-[50px] h-[40px] flex justify-center items-center relative">
+                        <img class="w-[25px]" src="/assets/avatar-de-persona-plomo.png" alt="usuario">
+                        <div
+                            class="w-[2px] h-[30px] bg-[color:#999999] absolute right-1 top-1/2 transform -translate-y-1/2">
+                        </div>
+                    </div>
+                    <input
+                        class="w-[200px] h-[40px] px-2.5 font-[Roboto] text-[18px] text-[color:#999999] border-0 rounded-none outline-none"
+                        placeholder="Nombre completo" type="text" id="user" name="usuario" required>
+                </label>
+            </div>
+
+            <div class="w-full h-fit mb-5">
+                <label class="w-full h-fit flex border-2 border-[color:#999999] overflow-hidden rounded-lg"
+                    for="password">
+                    <div class="w-[50px] h-[40px] flex justify-center items-center relative">
+                        <img class="w-[25px]" src="/assets/avatar-de-persona-plomo.png" alt="contra">
+                        <div
+                            class="w-[2px] h-[30px] bg-[color:#999999] absolute right-1 top-1/2 transform -translate-y-1/2">
+                        </div>
+                    </div>
+                    <input
+                        class="w-[200px] h-[40px] px-2.5 font-[Roboto] text-[18px] text-[color:#999999] border-0 rounded-none outline-none"
+                        placeholder="Numero de celular" type="number" id="password" name="contra" required>
+                </label>
+            </div>
+
+            <div class="w-full h-fit mb-[2px]">
+                <label class="w-full h-fit flex border-2 border-[color:#999999] overflow-hidden rounded-lg"
+                    for="password">
+                    <textarea
+                        class="w-full h-[100px] px-2.5 font-[Roboto] text-[18px] text-[color:#999999] border-0 rounded-none outline-none"
+                        rows="4" placeholder="Lugar de trabajo"></textarea>
+
+                </label>
+            </div>
+            <p class="cursor-pointer text-[18px] text-[color:#049dd8] font-[Roboto] text-right italic font-light mb-12">
+                ¿Necesitas
+                Ayuda?</p>
+
+            <button id="submit"
+                class="cursor-pointer w-[160px] h-[50px] bg-[color:#049dd8] block mx-auto outline-none border-0 rounded-lg">
+                <p class="text-white font-['Montserrat', 'Arial', sans-serif] text-[22px] font-semibold">ENVIAR</p>
+            </button>
+        </div>
+    </section>
+</body>
+
+</html>
